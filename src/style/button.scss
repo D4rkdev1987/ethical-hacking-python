@@ -1,0 +1,5 @@
+.btn  {
+    @include base-btn();
+    color: darkblue;
+    font-weight: 900;
+}
