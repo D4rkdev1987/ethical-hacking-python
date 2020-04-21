@@ -1,5 +1,5 @@
 @mixin base-btn {
-    cursor: pointer;
+    cursor: crosshair;
     height: 42px;
     font-size: 1em;
     font-weight: 500;
@@ -16,4 +16,31 @@
     &:hover {
         background-color: darkgreen;
     }
+}
+
+@mixin input-element {
+    input {
+        font-family: "Special Elite", sans-serif;
+        color: $charcoal;
+        padding: 5px 0px;
+        width: 100%;
+        border-top: 0px;
+        border-right: 0px;
+        border-left: 0px;
+        border-bottom: 1px solid green;
+        background-color: transparent;
+        transition: 0.5s all ease-in-out;
+        font-size: 1.1em;
+        margin-bottom: 21px;
+
+        &:focus {
+            outline: none;
+            border-bottom: 1px solid yellowgreen;
+        }
+    }
+}
+
+@mixin base-grid() {
+    display: grid;
+    grid-gap: 21px;
 }
